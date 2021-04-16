@@ -1,0 +1,231 @@
+:root{
+    --primary-color: olive; 
+    --secondary-color: olivedrab;
+    --light-color: chocolate;
+    --dark-color: greenyellow;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto Slab', sans-serif;
+    line-height: 1.5;
+    background-color: honeydew;
+}
+a{
+    color: lightslategray;
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+p{
+    margin: 0.7rem 0; 
+}
+img{
+    width: 100%;
+}
+h1{
+    font-family: 'Lora', sans-serif;
+    font-size: 40px;
+}
+h2{
+    font-family: 'Arimo', sans-serif;
+    font-size: 35px;
+}
+h3{
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+}
+h4{
+    font-family: 'Bitter', sans-serif;
+    font-size: 25px;
+    padding-bottom: 0.5rem;
+}
+/* utility classes */
+.container{
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 2rem;
+    overflow: hidden;
+}
+.btn-1{
+    background-color: var(--secondary-color);
+    padding: 0.5rem 0.5rem;
+    color: blanchedalmond;
+    
+}
+.btn-1:hover{
+    background-color: var(--light-color);
+}
+.btn-2:hover{
+    background-color: var(--light-color);
+}
+.btn-2{
+    background-color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    padding: 0.25rem 0.25rem;
+    color: whitesmoke;
+
+}
+.card-1{
+    background-color: white;
+    padding: 0.5rem;
+}
+.card-2{
+    background-color:rgb(212, 202, 202);
+    padding: 0.5rem;
+}
+.py-1{
+    padding: 1rem 0;
+}
+.py-2{
+    padding: 2rem 0;
+}
+.py-3{
+    padding: 3rem 0;
+}
+
+/* navigation */
+#main-nav{
+    background-color: whitesmoke;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+#main-nav .container{
+    display: grid;
+    grid-template-columns: 6fr 3fr 2fr;
+    padding: 1rem;
+    align-items: center;
+}
+#main-nav ul{
+    display: flex;
+}
+#main-nav ul li a{
+    padding: 0.60rem;
+}
+#main-nav ul li a.current{
+    background-color: var(--primary-color);
+    color: wheat;
+    border-radius: 25px;
+}
+#main-nav ul li a:hover{
+    background-color: var(--secondary-color);
+    color: white;
+    border-radius: 25px;
+}
+#main-nav .social i{
+    padding: 0.20rem;
+}
+/* showcase */
+#showcase{
+    color: #fff;
+    background-color: #333;
+    padding: 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+.covere{
+    background: url('../img/cover.jpg') no-repeat center top/cover;
+    
+    color: black;
+    font-weight: bolder;
+}
+.covere .cover-1{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+#content .content-1{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+}
+#content .content-1 img{
+    padding: 0 0.75rem
+}
+/* footer */
+#main-footer{
+    background-color: slategrey;
+    color: snow;
+}
+#main-footer a{
+    color: snow;
+}
+#main-footer .footer-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1.75rem;
+}
+#main-footer .footer-container > *:last-child{
+    background-color: rgb(39, 37, 37);
+    grid-column: 1 / span 3;
+    padding: 0.25rem;
+    text-align: center;
+}
+#main-footer .footer-container input[type=message]{
+    padding: 0.5rem 0;
+    width: 70%;
+    margin-bottom: 0.5rem;
+}
+#main-footer .footer-container input[type=submit]{
+    padding: 0.5rem 0;
+    width: 70%;
+}
+/* readmore */
+#contentt .sec-container{
+    background-color:darkgray;
+}
+#contentt .sec-container{
+    font-weight: bold;
+    padding: 0 0.5rem;
+}
+/* join us */
+#join-form .form-group{
+    margin-bottom: 20px;
+    
+    
+    
+}
+#join-form label{
+    display: block;
+    margin-bottom: 5px;
+   
+   
+}
+#join-form input, #join-form textarea{
+    width: 100%;
+    padding: 10px;
+    border: 1px #ddd solid;
+}
+#join-form input:focus, #join-form textarea:focus{
+    outline: none;
+    border-color: burlywood;
+}
+#join-form .join{
+    font-size: 50px;
+    color: black;
+}
+#join-form .container{
+   
+    background-color: rgba(8, 8, 8, 0.6);
+    
+}
+#join-form p{
+    font-weight: bold;
+    background-color: seashell;
+    width: 20%;
+    text-align: center;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    opacity: 0.4;
+    z-index: 1;
+}
+
